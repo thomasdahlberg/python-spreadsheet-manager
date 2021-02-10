@@ -37,7 +37,7 @@ for row in row_cache:
         if "/" in row[cell]:
             for date in IMPOSSIBLE_DATES:
                 row[cell] = row[cell].replace(date[0], date[1])
-    # print(row)
+
 csv_file = open(f"{file_name}", "w+")
 
 for row in row_cache:
@@ -50,4 +50,4 @@ for row in row_cache:
 
 csv_file.close()
 
-print('done!')
+print('Process Complete!')
